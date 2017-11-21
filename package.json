@@ -12,6 +12,8 @@
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
     "webpack": "^3.8.1"
   },
   "description": "This README would normally document whatever steps are necessary to get the application up and running.",
@@ -21,9 +23,18 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --watch"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fishshiz/W7D5.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fishshiz/W7D5/issues"
+  },
+  "homepage": "https://github.com/fishshiz/W7D5#readme"
 }

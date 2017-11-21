@@ -30,9 +30,6 @@ class User < ApplicationRecord
 
   def reset_token!
     self.session_token = SecureRandom.urlsafe_base64(16)
-    p "="*8
-    p self
-    p "="*8
     self.save!
     self.session_token
   end
