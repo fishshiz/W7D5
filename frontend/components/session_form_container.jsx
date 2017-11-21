@@ -9,5 +9,5 @@ const mapStatetoProps = (state, ownProps) => ({
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
-  
+  processForm: () => dispatch(formType)
 });

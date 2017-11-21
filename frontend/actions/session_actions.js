@@ -8,11 +8,11 @@ export const login = user => dispatch => (
 );
 
 export const logout = () => dispatch => (
-  ApiUtil.logout().then(user => (dispatch.receiveCurrentUser(null)))
+  ApiUtil.logout().then(user => (dispatch(receiveCurrentUser(null))))
 );
 
 export const signup = user => dispatch => (
-  ApiUtil.signup(user).then(user => dispatch.receiveCurrentUser(user)),
+  ApiUtil.signup(user).then(user => dispatch(receiveCurrentUser(user))),
   error => (dispatch(receiveErrors(error.responseJSON)))
 );
 
